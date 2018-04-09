@@ -1,18 +1,16 @@
 package com.artcak.artcakbase.date;
 
-import android.util.Log;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class IndoCalendarFormat {
-    private static final String[] days_short = {"Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"};
-    private static final String[] days = {"Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"};
-    private static final String[] months = {"Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"};
-    private static final String[] months_short = {"Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sept", "Okt", "Nov", "Des"};
+public class EnglishCalendarFormat {
+    private static final String[] days_short = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
+    private static final String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+    private static final String[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "Desember"};
+    private static final String[] months_short = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Des"};
 
     public static String getDayName(long time) {
         Calendar calendar = Calendar.getInstance();
@@ -81,28 +79,6 @@ public class IndoCalendarFormat {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(getCurrentTime());
         return calendar.get(Calendar.YEAR);
-    }
-
-    public static String getDateMouthShort(long time) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(time);
-        final int month = calendar.get(Calendar.MONTH);
-        return calendar.get(Calendar.DAY_OF_MONTH) + " " + months_short[month];
-    }
-
-    public static String getDefaultDate(String date, String dateFormat) {
-        SimpleDateFormat dateStandartFormatter = new SimpleDateFormat(dateFormat, Locale.US);
-        long time = 0;
-        try {
-            time = dateStandartFormatter.parse(date).getTime();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        if (time==0){
-            return date;
-        }else{
-            return IndoCalendarFormat.getDefaultDate(time);
-        }
     }
 
     public static String getCurrentTimeDefaultDate(){
