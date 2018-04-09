@@ -48,8 +48,8 @@ public class EnglishCalendarFormat {
         if (getCurrentYear()!=calendar.get(Calendar.YEAR)){
             year = " "+getCurrentYear();
         }
-        return days[calendar.get(Calendar.DAY_OF_WEEK)-1] + " " +
-                calendar.get(Calendar.DAY_OF_MONTH) + ", " +
+        return days[calendar.get(Calendar.DAY_OF_WEEK)-1] + ", " +
+                calendar.get(Calendar.DAY_OF_MONTH) + " " +
                 months[month] + year + " " +
                 (String.valueOf(calendar.get(Calendar.HOUR_OF_DAY)).length()==1 ? "0"+calendar.get(Calendar.HOUR_OF_DAY): calendar.get(Calendar.HOUR_OF_DAY))+ "." +
                 (String.valueOf(calendar.get(Calendar.MINUTE)).length()==1 ? "0"+calendar.get(Calendar.MINUTE): calendar.get(Calendar.MINUTE));
