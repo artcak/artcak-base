@@ -56,6 +56,18 @@ public class Tools {
     }
     public void log(String stringMessage){
         String methodName = new Object(){}.getClass().getEnclosingMethod().getName();
-        Log.i(Var.TAG,activity.getLocalClassName()+"->"+methodName+" "+stringMessage);
+        String callerMethodName = "";
+        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+        String tempString = "";
+        for (StackTraceElement stackTraceElement: stackTraceElements){
+            if (tempString.equals(methodName)){
+                callerMethodName = stackTraceElement.getMethodName();
+                break;
+            }
+            if (stackTraceElement.getMethodName().equals(methodName)){
+                tempString = methodName;
+            }
+        }
+        Log.i(Var.TAG,activity.getLocalClassName()+"->"+callerMethodName+"() "+stringMessage);
     }
 }
