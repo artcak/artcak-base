@@ -1,8 +1,11 @@
 package com.artcak.artcakbase.tools;
 
 import android.app.Activity;
+import android.content.Context;
 import android.util.Log;
 import android.util.Patterns;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -80,5 +83,14 @@ public class Tools {
 
     public Object getObject(Class pojo, String stringValue) {
         return gsonFormater().fromJson(stringValue,pojo);
+    }
+
+    public void closeKeyboard(){
+        View view = activity.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
+            assert imm != null;
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
     }
 }
