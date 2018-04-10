@@ -6,6 +6,9 @@ import android.util.Patterns;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Random;
@@ -69,5 +72,13 @@ public class Tools {
             }
         }
         Log.i(Var.TAG,activity.getLocalClassName()+"->"+callerMethodName+"() "+stringMessage);
+    }
+
+    public static Gson gsonFormater() {
+        return new GsonBuilder().setPrettyPrinting().serializeNulls().create();
+    }
+
+    public Object getObject(Class pojo, String stringValue) {
+        return gsonFormater().fromJson(stringValue,pojo);
     }
 }
