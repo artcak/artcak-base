@@ -29,8 +29,14 @@ public class ItemMenu {
         this.judul = judul;
     }
 
-    public void ItemMenu(String judul, int gambar_id){
+    public ItemMenu(String judul, int gambar_id){
         this.gambar_id = gambar_id;
         this.judul = judul;
+    }
+
+    public ItemMenu(String judul, int gambar_id, String gambar_url){
+        this.gambar_id = gambar_id;
+        this.judul = judul;
+        this.gambar_url = gambar_url;
     }
 }
