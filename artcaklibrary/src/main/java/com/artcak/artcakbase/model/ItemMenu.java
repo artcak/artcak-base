@@ -1,6 +1,8 @@
 package com.artcak.artcakbase.model;
 
-public class ItemMenu {
+import java.io.Serializable;
+
+public class ItemMenu implements Serializable{
     private int gambar_id;
     private String gambar_url;
     private String judul;
@@ -28,6 +30,8 @@ public class ItemMenu {
     public void setJudul(String judul) {
         this.judul = judul;
     }
+
+    public ItemMenu(){}
 
     public ItemMenu(String judul, int gambar_id){
         this.gambar_id = gambar_id;
