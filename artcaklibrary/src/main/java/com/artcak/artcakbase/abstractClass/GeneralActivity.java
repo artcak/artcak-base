@@ -14,7 +14,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class GeneralActivity extends AppCompatActivity {
-    private String BASE_API = "http://139.59.237.73";
+    private String BASE_API = "";
     protected Retrofit retrofit;
     protected Gson gson;
     protected Tools tools;

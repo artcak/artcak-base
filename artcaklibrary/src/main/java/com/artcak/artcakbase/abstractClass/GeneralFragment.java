@@ -18,6 +18,12 @@ public class GeneralFragment extends Fragment {
     protected Gson gson;
     protected Tools tools;
     protected GeneralApi generalApi;
+    private String BASE_API = "";
+
+    public void setBASE_API(String BASE_API) {
+        this.BASE_API = BASE_API;
+        createRetrofit();
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,6 +41,7 @@ public class GeneralFragment extends Fragment {
         httpClient.addInterceptor(logging);
         retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
+                .baseUrl(BASE_API)
                 .client(httpClient.build())
                 .build();
     }
