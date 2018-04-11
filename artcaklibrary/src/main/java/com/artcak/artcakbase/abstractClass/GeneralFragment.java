@@ -18,7 +18,7 @@ public class GeneralFragment extends Fragment {
     protected Gson gson;
     protected Tools tools;
     protected GeneralApi generalApi;
-    private String BASE_API = "";
+    private String BASE_API = "http://159.89.192.242";
 
     public void setBASE_API(String BASE_API) {
         this.BASE_API = BASE_API;

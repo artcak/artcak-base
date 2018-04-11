@@ -13,8 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d603698-67f0-4fc0-a05d-ab4d0a0611e4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/model/ItemMenu.java" afterPath="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/model/ItemMenu.java" />
+      <change beforePath="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralActivity.java" afterPath="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralActivity.java" />
+      <change beforePath="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralFragment.java" afterPath="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralFragment.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -3190,13 +3196,13 @@
         <option value="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/sessionmanager/SessionSharedPrefHelper.java" />
         <option value="$PROJECT_DIR$/artcaklibrary/build.gradle" />
         <option value="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/commons/CheckViewText.java" />
-        <option value="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralActivity.java" />
-        <option value="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralFragment.java" />
         <option value="$PROJECT_DIR$/artcaklibrary/src/main/res/drawable/border_dark.xml" />
         <option value="$PROJECT_DIR$/artcaklibrary/src/main/res/layout/item_menu.xml" />
         <option value="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/adapter/MenuAdapter.java" />
         <option value="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/tools/Tools.java" />
         <option value="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/model/ItemMenu.java" />
+        <option value="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralFragment.java" />
+        <option value="$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralActivity.java" />
       </list>
     </option>
   </component>
@@ -3242,6 +3248,13 @@
               <item name="artcaklibrary" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="artcakbase" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtcakBaseExample" type="1abcf292:AndroidViewProjectNode" />
+              <item name="artcaklibrary" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="artcakbase" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="abstractClass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ArtcakBaseExample" type="1abcf292:AndroidViewProjectNode" />
@@ -3473,6 +3486,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3584,20 +3598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/artcaklibrary/src/main/res/drawable/border_dark.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -3632,6 +3632,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="101" column="5" lean-forward="false" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3639,6 +3640,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artcaklibrary/src/main/java/com/artcak/artcakbase/abstractClass/GeneralFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
           <folding />
         </state>
       </provider>
