@@ -28,4 +28,9 @@ public class ItemMenu {
     public void setJudul(String judul) {
         this.judul = judul;
     }
+
+    public void ItemMenu(String judul, int gambar_id){
+        this.gambar_id = gambar_id;
+        this.judul = judul;
+    }
 }
